@@ -34,7 +34,42 @@ ChromaDB Vector Store
 Similarity Search
         ↓
 Relevant Document Chunks
+
         ↓
 LLM
+
+
+Project Structure
+FastAPI-RAG-API/
+│
+├── app/
+│   ├── chunker.py
+│   ├── config.py
+│   ├── embedder.py
+│   ├── loader.py
+│   ├── rag.py
+│   ├── retriever.py
+│   └── vector_store.py
+│
+├── tests/
+│
+├── main.py
+├── streamlit_app.py
+├── test_rag.py
+├── requirements.txt
+├── pyproject.toml
+├── README.md
+└── .gitignore
+
+
+Technologies Used
+Python
+FastAPI
+LangChain
+ChromaDB
+Streamlit
+Groq
+RAG
+Vector Embeddings
         ↓
 Generated Answer
