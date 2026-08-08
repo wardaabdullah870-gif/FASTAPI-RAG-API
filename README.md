@@ -20,23 +20,21 @@ The project uses document loading, text chunking, embeddings, vector search, and
 
 ## How the RAG Pipeline Works
 
-```text
-PDF / Text Documents
-        ↓
-Document Loader
-        ↓
-Text Chunking
-        ↓
-Embeddings
-        ↓
-ChromaDB Vector Store
-        ↓
-Similarity Search
-        ↓
+User Question
+      ↓
+FastAPI / Streamlit
+      ↓
+Retriever
+      ↓
+ChromaDB
+      ↓
 Relevant Document Chunks
-
-        ↓
+      ↓
+RAG
+      ↓
 LLM
+      ↓
+Generated Answer
 
 
 Project Structure
