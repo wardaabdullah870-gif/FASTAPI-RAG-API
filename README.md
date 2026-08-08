@@ -40,26 +40,32 @@ LLM
 
 
 Project Structure
-FastAPI-RAG-API/
+FastAPI RAG Document Q&A
 │
-├── app/
-│   ├── chunker.py
-│   ├── config.py
-│   ├── embedder.py
-│   ├── loader.py
-│   ├── rag.py
-│   ├── retriever.py
-│   └── vector_store.py
+├── FastAPI API
+│   └── /ask endpoint
 │
-├── tests/
+├── Streamlit UI
 │
-├── main.py
-├── streamlit_app.py
-├── test_rag.py
-├── requirements.txt
-├── pyproject.toml
-├── README.md
-└── .gitignore
+├── RAG Pipeline
+│   ├── Document Loader
+│   ├── Text Chunker
+│   ├── Embedding Generator
+│   ├── Vector Store
+│   ├── Retriever
+│   └── RAG / Answer Generation
+│
+├── ChromaDB
+│
+├── Configuration
+│   ├── requirements.txt
+│   ├── pyproject.toml
+│   └── .gitignore
+│
+├── Tests
+│   └── test_rag.py
+│
+└── GitHub Repository
 
 
 Technologies Used
